@@ -7,7 +7,7 @@ wasm:
 		--bind -Os --memory-init-file 0 --llvm-lto 1 \
 		-Iyoga \
 		-s WASM=1 \
-		-s WASM_ASYNC_COMPILATION=1 \
+		-s WASM_ASYNC_COMPILATION=0 \
 		-s DISABLE_EXCEPTION_CATCHING=1 \
 		-s AGGRESSIVE_VARIABLE_ELIMINATION=1 \
 		-s NO_EXIT_RUNTIME=1 \
@@ -24,7 +24,7 @@ asm:
 		-Iyoga \
 		-s WASM=0 \
 		-s ENVIRONMENT='shell,web' \
-		-s WASM_ASYNC_COMPILATION=1 \
+		-s WASM_ASYNC_COMPILATION=0 \
 		-s DISABLE_EXCEPTION_CATCHING=1 \
 		-s AGGRESSIVE_VARIABLE_ELIMINATION=1 \
 		-s NO_EXIT_RUNTIME=1 \
